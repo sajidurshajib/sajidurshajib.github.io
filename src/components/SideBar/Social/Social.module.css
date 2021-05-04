@@ -1,0 +1,39 @@
+.Social{
+    display: table;
+    margin: 0 auto;
+}
+.Social ul{
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+}
+.Social ul li{
+    float:left;
+    margin:7px;
+}
+.Social ul li a{
+    color: #b32f2f;
+    background-color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    border-radius: 100%;
+}
+.Social ul li a i{
+    line-height: 28px;
+}
+.Social ul li a i:hover{
+    text-decoration: none;
+}
+
+.hrSpan{
+    display: inline-block;
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #cc4444;
+}

@@ -1,0 +1,49 @@
+.SideBar{
+    width:280px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    animation: leftSideBar 400ms;
+}
+@keyframes leftSideBar {
+    from {left:-280px}
+    to {left:0}
+}
+
+.Name{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin:25px auto;
+}
+
+.proPic{
+    border-radius: 50%;
+    width:170px;
+    margin:0 auto;
+    display: block;
+}
+
+.hi{
+    text-align: center;
+    margin: 15px;
+    font-size: 14px;
+}
+
+.hire{
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: 25px auto;
+    padding: 7px 10px;
+    background-color: #cc4444;
+    color: #fff;
+    transition: 200ms;
+    border-radius: 4px;
+}
+.hire:hover{
+    text-decoration:none;
+    color: aliceblue;
+}

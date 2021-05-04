@@ -1,0 +1,25 @@
+.Menu{
+    margin: 0;
+}
+
+.Menu ul{
+    list-style: none;
+}
+.Menu ul li{
+    margin-top: 20px;
+}
+.Menu ul li a{
+    color: #fff;
+    font-weight: bold;
+}
+.Menu ul li a i{
+    font-size:14px;
+    width:20px;
+    text-align: center;
+    margin-left: 5px;
+    transition: 200ms;
+}
+.Menu ul li a:hover{
+    text-decoration: none;
+    color: #ffc3c3;
+}
