@@ -1,0 +1,44 @@
+@import url('../../assets/css/colors.css');
+
+
+/* .Intro{
+    background-color: var(--white-a);    
+} */
+.Intro{
+    padding:50px;
+    animation: Intro 1s;
+}
+@keyframes Intro {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.IntroWrapper h1{
+    font-weight: bold;
+}
+.IntroWrapper h4{
+    font-weight: 300;
+    font-size: 22px;
+    color: var(--grey);
+}
+
+.btnWrapper{
+    font-size: 14px;
+    font-weight: bold;
+}
+.btnWrapper a{
+    padding: 7px 15px;
+    border-radius: 3px;
+    margin-right: 5px;
+    color: var(--white);
+}
+.btnWrapper a:hover{
+    text-decoration: none;
+}
+.btnPrime{
+    background-color: var(--prime-color);
+}
+.btnDark{
+    background-color: var(--dark);
+}
+

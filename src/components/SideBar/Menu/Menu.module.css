@@ -1,3 +1,5 @@
+@import url('../../../assets/css/colors.css');
+
 .Menu{
     margin: 0;
 }
@@ -9,7 +11,7 @@
     margin-top: 20px;
 }
 .Menu ul li a{
-    color: #fff;
+    color: var(--white);
     font-weight: bold;
 }
 .Menu ul li a i{
@@ -21,5 +23,5 @@
 }
 .Menu ul li a:hover{
     text-decoration: none;
-    color: #ffc3c3;
+    color: var(--semi-white-color);
 }

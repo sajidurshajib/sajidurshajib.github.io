@@ -1,3 +1,5 @@
+@import url('../../../assets/css/colors.css');
+
 .Social{
     display: table;
     margin: 0 auto;
@@ -13,8 +15,8 @@
     margin:7px;
 }
 .Social ul li a{
-    color: #b32f2f;
-    background-color: #fff;
+    color: var(--prime-color);
+    background-color: var(--white);
     text-align: center;
     display: inline-block;
     width: 28px;
@@ -35,5 +37,5 @@
     height: 1px;
     width: 100%;
     margin: 0 auto;
-    background-color: #cc4444;
+    background-color:var(--semi-prime-color);
 }

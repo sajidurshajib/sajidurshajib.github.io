@@ -1,3 +1,5 @@
+@import url('../../assets/css/colors.css');
+
 .SideBar{
     width:280px;
     position: fixed;
@@ -38,12 +40,12 @@
     text-align: center;
     margin: 25px auto;
     padding: 7px 10px;
-    background-color: #cc4444;
-    color: #fff;
+    background-color:var(--semi-prime-color);
+    color: var(--white);
     transition: 200ms;
     border-radius: 4px;
 }
 .hire:hover{
     text-decoration:none;
-    color: aliceblue;
+    color: var(--white);
 }

@@ -1,6 +1,12 @@
+@import url('./assets/css/colors.css');
+
 .prime-color{
-    background-color: #b32f2f;
-    color:#fff;
+    background-color: var(--prime-color);
+    color:var(--white);
+}
+
+.main-wrapper{
+    margin-left:280px;
 }
 
 ::-webkit-scrollbar{

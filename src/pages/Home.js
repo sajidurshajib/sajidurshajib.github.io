@@ -1,11 +1,11 @@
 import SideBar from '../components/SideBar/SideBar'
-// import Intro from '../components/Intro/Intro'
+import Intro from '../components/Intro/Intro'
 
 const Home = ()=> {
     return(
         <div>
             <SideBar />
-            {/* <Intro /> */}
+            <Intro />
         </div>
     )
 }
