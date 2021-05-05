@@ -1,9 +1,52 @@
+/* Theme */
 :root{
     --prime-color:#b32f2f;
     --semi-prime-color:#cc4444;
     --semi-white-color:#ffc3c3;
-    --dark:#333;
-    --grey:grey;
-    --white:#fff;
     --white-a:#fafafa;
+    --white:#fff;
+    --grey:grey;
+    --dark:#333;
+}
+
+
+/* Skills */
+.fa-js, .javaScriptColor{
+    color:#F1DE4F;
+}
+.fa-node-js{
+    color:#54B689;
+}
+.fa-npm{
+    color:#BB443E;
+}
+.fa-react{
+    color:#62D4FA;
+}
+.fa-angular{
+    color:#CA3327;
+}
+.fa-vuejs{
+    color:#64B687;
+}
+.fa-leaf{
+    color:#4DB33D; /*Mongodb*/
+}
+.fa-html5{
+    color:#DE6E3C;
+}
+.fa-css3-alt{
+    color:#53A7DC;
+}
+.fa-php{
+    color:#777BAF;
+}
+.fa-fire{
+    color:#dd4814; /*codeigniter*/
+}
+.fa-laravel{
+    color: #ff2d20;
+}
+.fa-database{
+    color: #4479a1; /*mysql*/
 }

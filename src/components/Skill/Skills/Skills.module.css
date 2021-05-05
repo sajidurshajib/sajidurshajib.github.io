@@ -1,0 +1,13 @@
+.Skills .row .col-md-3{
+    margin-top:20px;
+}
+
+.header{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.details{
+    font-size: 14px;
+    text-align: left;
+}

@@ -1,6 +1,7 @@
 import classes from './SideBar.module.css'
 import proPic from '../../assets/img/24451343.jpeg'
 import '../../assets/fontawesome/css/all.min.css'
+import '../../assets/fontawesome/css/solid.min.css'
 import Social from './Social/Social'
 import Menu from './Menu/Menu'
 

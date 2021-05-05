@@ -1,0 +1,13 @@
+.Icons ul{
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 5px;
+}
+.Icons ul li{
+    float: left;
+}
+.Icons ul li i{
+    font-size: 24px;
+    margin-right: 10px;
+}

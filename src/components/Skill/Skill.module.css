@@ -1,0 +1,27 @@
+@import url('../../assets/css/colors.css');
+
+.Skill{
+    padding: 50px;
+    background-color: var(--white-a);
+    animation: Skill 1s;
+}
+
+@keyframes Skill {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.Skill h2{
+    font-weight: bold;
+    position: relative;
+    margin-left: 20px;
+}
+
+.Skill h2::before{
+    content: '';
+    height: 100%;
+    width: 5px;
+    background-color: var(--prime-color);
+    position: absolute;
+    left: -20px;
+}

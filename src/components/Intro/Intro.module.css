@@ -1,9 +1,5 @@
 @import url('../../assets/css/colors.css');
 
-
-/* .Intro{
-    background-color: var(--white-a);    
-} */
 .Intro{
     padding:50px;
     animation: Intro 1s;
@@ -21,6 +17,17 @@
     font-size: 22px;
     color: var(--grey);
 }
+
+
+.heroImg{
+    width:270px;
+    height: 260px;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
+}
+
 
 .btnWrapper{
     font-size: 14px;

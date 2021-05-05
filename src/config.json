@@ -1,0 +1,30 @@
+{
+    "data":["game"],
+
+    "skills":[
+        {
+            "id":1,
+            "icons":["fab fa-js"],
+            "header":"Vanilla javascript",
+            "details":"List skills/technologies here. You can change the icon above to any of the 1500+ fontawesoome 5 free icons available. Aenean commodo ligula eget dolor"
+        },
+        {
+            "id":2,
+            "icons":["fab fa-node-js","fab fa-npm"],
+            "header":"Node js",
+            "details":"List skills/technologies here. You can change the icon above to any of the 1500+ fontawesoome 5 free icons available. Aenean commodo ligula eget dolor"
+        },
+        {
+            "id":3,
+            "icons":["fab fa-react","fab fa-angular","fab fa-vuejs"],
+            "header":"React, Angular and Vue",
+            "details":"List skills/technologies here. You can change the icon above to any of the 1500+ fontawesoome 5 free icons available. Aenean commodo ligula eget dolor"
+        },
+        {
+            "id":4,
+            "icons":["fas fa-leaf"],
+            "header":"Mongodb",
+            "details":"List skills/technologies here. You can change the icon above to any of the 1500+ fontawesoome 5 free icons available. Aenean commodo ligula eget dolor"
+        }
+    ]
+}

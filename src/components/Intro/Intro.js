@@ -18,14 +18,7 @@ const Intro = ()=> {
                     </div>
                     <div className="col-md-4">
                         <div style={{
-                            backgroundImage:`url(${hero})`,
-                            width: '270px',
-                            height: '260px',
-                            backgroundPosition: 'center',
-                            backgroundSize:'cover',
-                            display: 'block',
-                            margin: '0 auto'
-                            }}>
+                            backgroundImage:`url(${hero})`}} className={classes.heroImg}>
                         </div>
                     </div>
                 </div>
