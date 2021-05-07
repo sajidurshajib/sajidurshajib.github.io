@@ -23,11 +23,13 @@
     height: 28px;
     font-size: 14px;
     border-radius: 100%;
+    transition: 300ms;
 }
 .Social ul li a i{
     line-height: 28px;
 }
-.Social ul li a i:hover{
+.Social ul li a:hover{
+    transform: rotate(360deg);
     text-decoration: none;
 }
 

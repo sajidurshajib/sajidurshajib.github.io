@@ -19,7 +19,7 @@
     width:20px;
     text-align: center;
     margin-left: 5px;
-    transition: 200ms;
+    transition: 300ms;
 }
 .Menu ul li a:hover{
     text-decoration: none;

@@ -1,5 +1,28 @@
 {
-    "data":["game"],
+    "githubUsername":"sajidurshajib",
+
+    "socials":[
+        {
+            "id":1,
+            "icon":"fab fa-twitter",
+            "url":"https://twitter.com/SajidurShajib"
+        },
+        {
+            "id":2,
+            "icon":"fab fa-linkedin",
+            "url":"https://linkedin.com/in/sajidurshajib"
+        },
+        {
+            "id":3,
+            "icon":"fab fa-github",
+            "url":"https://github.com/sajidurshajib"
+        },
+        {
+            "id":4,
+            "icon":"fab fa-facebook-f",
+            "url":"https://facebook.com/sajidur.shajib"
+        }
+    ],
 
     "skills":[
         {
