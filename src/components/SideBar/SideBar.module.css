@@ -5,14 +5,29 @@
     position: fixed;
     left: 0;
     top: 0;
-    height: 100vh;
+    height: 100%;
     overflow-y: auto;
+    transition: 0.5s;
     animation: leftSideBar 400ms;
 }
 @keyframes leftSideBar {
     from {left:-280px}
     to {left:0}
 }
+
+.hideBtn{
+    animation: leftBtn 400ms;
+    position: fixed;
+    transition: 0.5s;
+    top:0;
+    left: 280px;
+    display: none;
+}
+@keyframes leftBtn {
+    from {left:0}
+    to {left:280px}
+}
+
 
 .Name{
     text-align: center;
@@ -75,5 +90,20 @@
     to{
         transform: scale(1);
         opacity: 0;
+    }
+}
+
+
+
+@media(max-width:991px){
+
+}
+@media(max-width:767px){
+    
+}
+@media(max-width:360px){
+    .SideBar{
+        width:100%;
+        z-index: 1000;
     }
 }

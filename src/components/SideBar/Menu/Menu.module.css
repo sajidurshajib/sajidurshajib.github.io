@@ -25,3 +25,19 @@
     text-decoration: none;
     color: var(--semi-white-color);
 }
+
+
+
+@media(max-width:991px){
+
+}
+@media(max-width:767px){
+    
+}
+@media(max-width:360px){
+    .Menu ul{
+        display: table;
+        margin: 0 auto;
+        width: 40%;
+    }
+}
