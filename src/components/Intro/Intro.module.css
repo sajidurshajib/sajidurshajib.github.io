@@ -49,3 +49,17 @@
     background-color: var(--dark);
 }
 
+
+@media(max-width:991px){
+
+}
+@media(max-width:767px){
+    .heroImg{
+        width: 250px;
+    }
+}
+@media(max-width:360px){
+    .heroImg{
+        width: 250px;
+    }
+}

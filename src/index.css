@@ -16,3 +16,17 @@
     background-color: #cc4444;
     border-radius: 5px;
 }
+
+@media(max-width:991px){
+
+}
+@media(max-width:767px){
+    .main-wrapper{
+        margin-left: 0;
+    }
+}
+@media(max-width:360px){
+    .main-wrapper{
+        margin-left: 0;
+    }
+}

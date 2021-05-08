@@ -99,7 +99,13 @@
 
 }
 @media(max-width:767px){
-    
+    .Name{
+        font-size: 28px;
+    }
+    .SideBar{
+        width:100%;
+        z-index: 1000;
+    }
 }
 @media(max-width:360px){
     .SideBar{

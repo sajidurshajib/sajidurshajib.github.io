@@ -50,7 +50,11 @@
 
 }
 @media(max-width:767px){
-    
+    .Social ul li a{
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+    }
 }
 @media(max-width:360px){
     
