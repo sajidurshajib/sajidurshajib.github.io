@@ -34,10 +34,11 @@
 @media(max-width:767px){
     .Menu ul li a{
         font-size: 22px;
-        margin-left: 35px;
+        margin-left: 75px;
     }
     .Menu ul li a i{
         font-size: 18px;
+        width: 22px;
     }
 }
 @media(max-width:360px){

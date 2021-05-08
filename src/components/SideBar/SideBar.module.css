@@ -50,6 +50,7 @@
 }
 
 .hire{
+    font-weight: bold;
     display: block;
     width: 40%;
     text-align: center;
@@ -99,12 +100,23 @@
 
 }
 @media(max-width:767px){
-    .Name{
-        font-size: 28px;
-    }
     .SideBar{
         width:100%;
         z-index: 1000;
+    }
+    .Name{
+        font-size: 28px;
+    }
+    .hi{
+        text-align: center;
+        margin: 15px 60px;
+        font-size: 16px;
+    }
+    .hire{
+        width: 50%;
+        text-align: center;
+        margin: 45px auto;
+        padding: 10px 10px;
     }
 }
 @media(max-width:360px){

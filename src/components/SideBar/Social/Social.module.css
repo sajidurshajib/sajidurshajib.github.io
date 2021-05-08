@@ -55,6 +55,9 @@
         height: 32px;
         font-size: 18px;
     }
+    .Social ul li a i{
+        line-height: 30px;
+    }
 }
 @media(max-width:360px){
     
