@@ -16,11 +16,20 @@ const SideBar = ()=> {
 
     useEffect(() => {
         fetch(`https://api.github.com/users/${gitUser}`)
+        .then((response)=>{
+            if(!response.ok){
+                throw Error(response.statusText)
+            }
+            return response
+        })
         .then((res)=>{
             return res.json()
         })
         .then((data)=>{
             setData(data)
+        })
+        .catch((err)=>{
+            console.log(err)
         })
     })
 
@@ -37,7 +46,7 @@ const SideBar = ()=> {
 
     return(
         <div className={`${classes.SideBar} ${"prime-color"} ${side}`}>
-            <button className={`${classes.hideBtn} ${btnSide}`} onClick={left}>|||</button>
+            <button className={`${classes.hideBtn} ${btnSide}`} onClick={left}><i className="fas fa-angle-double-left"></i></button>
 
             <h2 className={classes.Name}>{`${data.name?.split(' ').slice(0,2).join(' ')}`}</h2>
             <img className={classes.proPic} src={data.avatar_url} alt="proPic"/>

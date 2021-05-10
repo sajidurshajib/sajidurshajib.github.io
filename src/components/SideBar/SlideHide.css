@@ -1,6 +1,15 @@
 .hideSide{
-    left: -280px;
+    left: -100%;
 }
 .hideBtn{
     left:0;
+    right: auto;
+    animation: ops 2s;
+}
+.hideBtn i{
+    transform: rotate(180deg);
+}
+@keyframes ops{
+    from {opacity: 0;}
+    to {opacity:1}
 }
