@@ -11,3 +11,20 @@
     font-size: 14px;
     text-align: left;
 }
+
+
+
+
+@media(max-width:991px){
+
+}
+@media(max-width:767px){
+    .details{
+        font-size: 12px;
+    }
+}
+@media(max-width:360px){
+    .details{
+        font-size: 12px;
+    }
+}

@@ -48,8 +48,19 @@ const SideBar = ()=> {
         <div className={`${classes.SideBar} ${"prime-color"} ${side}`}>
             <button className={`${classes.hideBtn} ${btnSide}`} onClick={left}><i className="fas fa-angle-double-left"></i></button>
 
-            <h2 className={classes.Name}>{`${data.name?.split(' ').slice(0,2).join(' ')}`}</h2>
-            <img className={classes.proPic} src={data.avatar_url} alt="proPic"/>
+            {
+                data.name ? 
+                <h2 className={classes.Name}>{`${data.name?.split(' ').slice(0,2).join(' ')}`}</h2>
+                :null
+            }
+            
+
+            {
+                data.avatar_url ? 
+                <img className={classes.proPic} src={data.avatar_url} alt="proPic"/>
+                :null
+            }
+            
             <p className={classes.hi}>{data.bio}</p>
             
             <Social />

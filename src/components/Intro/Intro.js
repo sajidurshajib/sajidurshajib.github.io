@@ -1,16 +1,48 @@
+import React, {useEffect, useState} from 'react'
 import classes from './Intro.module.css'
 import '../../assets/fontawesome/css/fontawesome.min.css'
 import hero from '../../assets/img/hero.png'
+import config from '../../config.json'
 
 const Intro = ()=> {
+
+    const [data, setData] = useState('')
+
+    const gitUser = config.githubUsername
+
+    useEffect(() => {
+        fetch(`https://api.github.com/users/${gitUser}`)
+        .then((response)=>{
+            if(!response.ok){
+                throw Error(response.statusText)
+            }
+            return response
+        })
+        .then((res)=>{
+            return res.json()
+        })
+        .then((data)=>{
+            setData(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+    })
+
     return (
         <div className={`${classes.Intro} ${"main-wrapper"}`}>
             <div className={classes.IntroWrapper}>
                 <div className="row">
                     <div className="col-md-8">
-                        <h1>Sajidur Rahman Shajib</h1>
-                        <h4>Software engineer and Web developer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut explicabo ullam vel sequi, voluptates voluptate consectetur maxime temporibus assumenda officia inventore harum porro. Iste, nisi incidunt excepturi explicabo soluta veritatis!</p>
+                        
+                        {
+                        data.name ? 
+                        <h1>{data.name}</h1> 
+                        :<h1>{config.name}</h1>
+                        }
+        
+                        <h4>{config.position}</h4>
+                        <p>{config.about}</p>
                         <div className={classes.btnWrapper}>
                             <a className={classes.btnPrime} href="hireme/"><i className="fas fa-paper-plane"></i> Hire me</a>
                             <a className={classes.btnDark} href="resume/"><i className="fas fa-file-alt"></i> View Resume</a>

@@ -11,7 +11,7 @@ const Skills = ()=> {
             <div className="row">
                 {skills.map((value, index)=>{
                     return(
-                        <div className="col-md-3" key={value.id}>
+                        <div className="col-md-3 col-sm-6" key={value.id}>
 
                             <Icons Icons={value.icons} />
 
