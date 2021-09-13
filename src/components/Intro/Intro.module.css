@@ -1,26 +1,29 @@
 @import url('../../assets/css/colors.css');
 
-.Intro{
-    padding:50px;
+.Intro {
+    padding: 50px;
     animation: Intro 1s;
 }
 @keyframes Intro {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.IntroWrapper h1{
+.IntroWrapper h1 {
     font-weight: bold;
 }
-.IntroWrapper h4{
+.IntroWrapper h4 {
     font-weight: 300;
     font-size: 22px;
     color: var(--grey);
 }
 
-
-.heroImg{
-    width:270px;
+.heroImg {
+    width: 270px;
     height: 260px;
     background-position: center;
     background-size: cover;
@@ -28,71 +31,68 @@
     margin: 0 auto;
 }
 
-
-.btnWrapper{
+.btnWrapper {
     font-size: 14px;
     font-weight: bold;
 }
-.btnWrapper a{
+.btnWrapper a {
     display: inline-block;
     padding: 7px 15px;
     border-radius: 3px;
     margin-right: 5px;
     color: var(--white);
 }
-.btnWrapper a:hover{
+.btnWrapper a:hover {
     text-decoration: none;
 }
-.btnPrime{
+.btnPrime {
     background-color: var(--prime-color);
 }
-.btnDark{
+.btnDark {
     background-color: var(--dark);
 }
 
-
-@media(max-width:991px){
-
+@media (max-width: 991px) {
 }
-@media(max-width:767px){
-    .IntroWrapper h1{
+@media (max-width: 767px) {
+    .IntroWrapper h1 {
         font-weight: bold;
         font-size: 28px;
     }
-    .IntroWrapper h4{
+    .IntroWrapper h4 {
         font-size: 16px;
     }
-    .IntroWrapper p{
+    .IntroWrapper p {
         font-size: 14px;
     }
-    .btnWrapper{
+    .btnWrapper {
         display: block;
     }
-    .heroImg{
+    .heroImg {
         width: 250px;
         margin-top: 35px;
         display: block;
     }
 }
-@media(max-width:360px){
-    .IntroWrapper h1{
+@media (max-width: 360px) {
+    .IntroWrapper h1 {
         font-size: 20px;
     }
-    .IntroWrapper h4{
+    .IntroWrapper h4 {
         font-size: 16px;
     }
-    .IntroWrapper p{
+    .IntroWrapper p {
         font-size: 14px;
     }
-    .btnWrapper{
+    .btnWrapper {
         font-size: 12px;
         font-weight: bold;
     }
-    .btnWrapper a{
+    .btnWrapper a {
         display: inline-block;
         padding: 5px 12px;
     }
-    .heroImg{
+    .heroImg {
         width: 220px;
         height: 200px;
     }

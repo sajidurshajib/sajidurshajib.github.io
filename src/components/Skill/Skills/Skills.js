@@ -1,18 +1,16 @@
-import classes from './Skills.module.css'
-import Icons from './Icons/Icons'
 import config from '../../../config.json'
+import Icons from './Icons/Icons'
+import classes from './Skills.module.css'
 
-const Skills = ()=> {
-    
+const Skills = () => {
     let skills = config.skills
 
-    return(
+    return (
         <div className={classes.Skills}>
             <div className="row">
-                {skills.map((value, index)=>{
-                    return(
+                {skills.map((value, index) => {
+                    return (
                         <div className="col-md-3 col-sm-6" key={value.id}>
-
                             <Icons Icons={value.icons} />
 
                             <p className={classes.header}>{value.header}</p>

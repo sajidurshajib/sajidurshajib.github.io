@@ -1,7 +1,7 @@
 @import url('../../assets/css/colors.css');
 
-.SideBar{
-    width:280px;
+.SideBar {
+    width: 280px;
     position: fixed;
     left: 0;
     top: 0;
@@ -11,13 +11,15 @@
     animation: leftSideBar 400ms;
 }
 @keyframes leftSideBar {
-    from {left:-280px}
-    to {left:0}
+    from {
+        left: -280px;
+    }
+    to {
+        left: 0;
+    }
 }
 
-
-
-.hideBtn{
+.hideBtn {
     position: fixed;
     transition: 0.5s;
     background-color: var(--semi-prime-color);
@@ -25,49 +27,46 @@
     display: none;
 }
 
-
-
-
-.Name{
+.Name {
     text-align: center;
     font-weight: bold;
     font-size: 22px;
-    margin:25px auto;
+    margin: 25px auto;
 }
 
-.proPic{
+.proPic {
     border-radius: 50%;
-    width:170px;
-    margin:0 auto;
+    width: 170px;
+    margin: 0 auto;
     display: block;
 }
 
-.hi{
+.hi {
     text-align: center;
     margin: 15px;
     font-size: 14px;
 }
 
-.hire{
+.hire {
     font-weight: bold;
     display: block;
     width: 40%;
     text-align: center;
     margin: 25px auto;
     padding: 7px 10px;
-    background-color:var(--semi-prime-color);
+    background-color: var(--semi-prime-color);
     color: var(--white);
     transition: 200ms;
     border-radius: 4px;
     position: relative;
     overflow: hidden;
 }
-.hire:hover{
-    text-decoration:none;
+.hire:hover {
+    text-decoration: none;
     color: var(--white);
 }
-.hire::before{
-    content:'';
+.hire::before {
+    content: '';
     background-color: var(--white);
     opacity: 0.3;
     position: absolute;
@@ -79,34 +78,29 @@
     z-index: 100;
     transform: scale(0);
 }
-.hire:hover::before{
+.hire:hover::before {
     animation: ripple 700ms;
 }
-@keyframes ripple{
-    from{
+@keyframes ripple {
+    from {
         transform: scale(0);
         opacity: 0.3;
     }
-    to{
+    to {
         transform: scale(1);
         opacity: 0;
     }
 }
 
-
-
-@media(max-width:991px){
-
+@media (max-width: 991px) {
 }
-@media(max-width:767px){
-    .SideBar{
-        width:100%;
+@media (max-width: 767px) {
+    .SideBar {
+        width: 100%;
         z-index: 1000;
     }
 
-
-
-    .hideBtn{
+    .hideBtn {
         display: block;
         position: fixed;
         top: 50%;
@@ -118,34 +112,36 @@
         line-height: 16px;
         animation: ops 2s;
     }
-    .hideBtn i{
+    .hideBtn i {
         font-size: 26px;
     }
     @keyframes ops {
-        from {opacity: 0;}
-        to {opacity:1}
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 
-
-    
-    .Name{
+    .Name {
         font-size: 28px;
     }
-    .hi{
+    .hi {
         text-align: center;
         margin: 15px 60px;
         font-size: 16px;
     }
-    .hire{
+    .hire {
         width: 50%;
         text-align: center;
         margin: 45px auto;
         padding: 10px 10px;
     }
 }
-@media(max-width:360px){
-    .SideBar{
-        width:100%;
+@media (max-width: 360px) {
+    .SideBar {
+        width: 100%;
         z-index: 1000;
     }
 }

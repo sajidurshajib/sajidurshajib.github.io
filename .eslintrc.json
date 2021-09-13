@@ -1,0 +1,9 @@
+{
+    "extends": ["react-app", "prettier"],
+    "plugins": ["prettier"],
+    "parser": "babel-eslint",
+    "rules": {
+        "prettier/prettier": ["warn", { "printWidth": 120 }],
+        "react/react-in-jsx-scope": "off"
+    }
+}

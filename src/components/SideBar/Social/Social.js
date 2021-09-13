@@ -1,19 +1,19 @@
-import classes from './Social.module.css'
 import config from '../../../config.json'
+import classes from './Social.module.css'
 
 const socials = config.socials
 
-const Social = ()=>{
-    return(
+const Social = () => {
+    return (
         <div className={classes.Social}>
             <ul>
-                {socials.map((v,i)=>{
-                    return(
+                {socials.map((v, i) => {
+                    return (
                         <li key={i}>
                             <a href={v.url} target="_blank" rel="noreferrer">
                                 <i className={v.icon}></i>
                             </a>
-                        </li>        
+                        </li>
                     )
                 })}
             </ul>
