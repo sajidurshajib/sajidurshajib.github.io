@@ -1,23 +1,27 @@
 @import url('../../assets/css/colors.css');
 
-.Skill{
+.Skill {
     padding: 50px;
     background-color: var(--white-a);
     animation: Skill 1s;
 }
 
 @keyframes Skill {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.Skill h2{
+.Skill h2 {
     font-weight: bold;
     position: relative;
     margin-left: 20px;
 }
 
-.Skill h2::before{
+.Skill h2::before {
     content: '';
     height: 100%;
     width: 5px;
@@ -26,24 +30,21 @@
     left: -20px;
 }
 
-
-
-@media(max-width:991px){
-
+@media (max-width: 991px) {
 }
-@media(max-width:767px){
-    .Skill h2{
-        font-size:24px ;
+@media (max-width: 767px) {
+    .Skill h2 {
+        font-size: 24px;
     }
-    .Skill p{
+    .Skill p {
         font-size: 14px;
     }
 }
-@media(max-width:360px){
-    .Skill h2{
-        font-size:24px ;
+@media (max-width: 360px) {
+    .Skill h2 {
+        font-size: 24px;
     }
-    .Skill p{
+    .Skill p {
         font-size: 14px;
     }
 }

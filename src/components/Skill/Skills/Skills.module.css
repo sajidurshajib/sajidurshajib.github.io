@@ -1,30 +1,26 @@
-.Skills .row .col-md-3{
-    margin-top:20px;
+.Skills .row .col-md-3 {
+    margin-top: 20px;
 }
 
-.header{
+.header {
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 5px;
 }
-.details{
+.details {
     font-size: 14px;
     text-align: left;
 }
 
-
-
-
-@media(max-width:991px){
-
+@media (max-width: 991px) {
 }
-@media(max-width:767px){
-    .details{
+@media (max-width: 767px) {
+    .details {
         font-size: 12px;
     }
 }
-@media(max-width:360px){
-    .details{
+@media (max-width: 360px) {
+    .details {
         font-size: 12px;
     }
 }

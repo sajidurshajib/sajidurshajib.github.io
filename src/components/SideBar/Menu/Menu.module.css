@@ -1,48 +1,45 @@
 @import url('../../../assets/css/colors.css');
 
-.Menu{
+.Menu {
     margin: 0;
 }
 
-.Menu ul{
+.Menu ul {
     list-style: none;
 }
-.Menu ul li{
+.Menu ul li {
     margin-top: 20px;
 }
-.Menu ul li a{
+.Menu ul li a {
     color: var(--white);
     font-weight: bold;
 }
-.Menu ul li a i{
-    font-size:14px;
-    width:20px;
+.Menu ul li a i {
+    font-size: 14px;
+    width: 20px;
     text-align: center;
     margin-left: 5px;
     transition: 300ms;
 }
-.Menu ul li a:hover{
+.Menu ul li a:hover {
     text-decoration: none;
     color: var(--semi-white-color);
 }
 
-
-
-@media(max-width:991px){
-
+@media (max-width: 991px) {
 }
-@media(max-width:767px){
-    .Menu ul li a{
+@media (max-width: 767px) {
+    .Menu ul li a {
         font-size: 22px;
         margin-left: 75px;
     }
-    .Menu ul li a i{
+    .Menu ul li a i {
         font-size: 18px;
         width: 22px;
     }
 }
-@media(max-width:360px){
-    .Menu ul li a{
+@media (max-width: 360px) {
+    .Menu ul li a {
         font-size: 20px;
         margin-left: 25px;
     }
