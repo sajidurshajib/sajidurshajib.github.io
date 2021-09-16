@@ -1,32 +1,31 @@
 @import url('./assets/css/colors.css');
 
-.prime-color{
+.prime-color {
     background-color: var(--prime-color);
-    color:var(--white);
+    color: var(--white);
 }
 
-.main-wrapper{
-    margin-left:280px;
+.main-wrapper {
+    margin-left: 280px;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 5px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: #cc4444;
     border-radius: 5px;
 }
 
-@media(max-width:991px){
-
+@media (max-width: 991px) {
 }
-@media(max-width:767px){
-    .main-wrapper{
+@media (max-width: 767px) {
+    .main-wrapper {
         margin-left: 0;
     }
 }
-@media(max-width:360px){
-    .main-wrapper{
+@media (max-width: 360px) {
+    .main-wrapper {
         margin-left: 0;
     }
 }
