@@ -1,4 +1,69 @@
-@import url('./assets/css/colors.css');
+/* Theme */
+:root {
+    --prime-color: #b32f2f;
+    --semi-prime-color: #cc4444;
+    --semi-white-color: #ffc3c3;
+    --white-a: #fafafa;
+    --white: #fff;
+    --grey: grey;
+    --dark: #333;
+}
+
+/* Skills */
+.fa-js,
+.javaScriptColor {
+    color: #f1de4f;
+}
+.fa-node-js {
+    color: #54b689;
+}
+.fa-npm {
+    color: #bb443e;
+}
+.fa-react {
+    color: #62d4fa;
+}
+.fa-angular {
+    color: #ca3327;
+}
+.fa-vuejs {
+    color: #64b687;
+}
+.fa-leaf {
+    color: #4db33d; /*Mongodb*/
+}
+.fa-html5 {
+    color: #de6e3c;
+}
+.fa-css3-alt {
+    color: #53a7dc;
+}
+.fa-php {
+    color: #777baf;
+}
+.fa-fire {
+    color: #dd4814; /*codeigniter*/
+}
+.fa-laravel {
+    color: #ff2d20;
+}
+.fa-database {
+    color: #4479a1; /*mysql*/
+}
+
+html,
+body div {
+    scrollbar-color: #cc4444 #b32f2f !important;
+    scrollbar-width: thin !important;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cc4444;
+    border-radius: 5px;
+}
 
 .prime-color {
     background-color: var(--prime-color);
@@ -7,14 +72,6 @@
 
 .main-wrapper {
     margin-left: 280px;
-}
-
-::-webkit-scrollbar {
-    width: 5px;
-}
-::-webkit-scrollbar-thumb {
-    background-color: #cc4444;
-    border-radius: 5px;
 }
 
 @media (max-width: 991px) {
