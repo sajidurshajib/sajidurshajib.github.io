@@ -1,5 +1,6 @@
+import { faFileAlt, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
-import '../../assets/fontawesome/css/fontawesome.min.css'
 import hero from '../../assets/img/hero.png'
 import config from '../../config.json'
 import classes from './Intro.module.css'
@@ -39,10 +40,12 @@ const Intro = () => {
                         <p>{config.about}</p>
                         <div className={classes.btnWrapper}>
                             <a className={classes.btnPrime} href="hireme/">
-                                <i className="fas fa-paper-plane"></i> Hire me
+                                <FontAwesomeIcon icon={faPaperPlane} />
+                                Hire me
                             </a>
                             <a className={classes.btnDark} href="resume/">
-                                <i className="fas fa-file-alt"></i> View Resume
+                                <FontAwesomeIcon icon={faFileAlt} />
+                                View Resume
                             </a>
                         </div>
                     </div>

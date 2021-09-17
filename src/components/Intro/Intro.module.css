@@ -33,6 +33,9 @@
     font-size: 14px;
     font-weight: bold;
 }
+.btnWrapper svg {
+    margin-right: 5px;
+}
 .btnWrapper a {
     display: inline-block;
     padding: 7px 15px;
