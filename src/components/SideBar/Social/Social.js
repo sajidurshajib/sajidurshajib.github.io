@@ -1,3 +1,8 @@
+import '../../../assets/fontawesome/css/all.min.css'
+import '../../../assets/fontawesome/css/brands.min.css'
+import '../../../assets/fontawesome/css/fontawesome.min.css'
+import '../../../assets/fontawesome/css/regular.min.css'
+import '../../../assets/fontawesome/css/solid.min.css'
 import config from '../../../config.json'
 import classes from './Social.module.css'
 

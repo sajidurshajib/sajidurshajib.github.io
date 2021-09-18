@@ -1,3 +1,5 @@
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
 import config from '../../config.json'
 import Menu from './Menu/Menu'
@@ -57,7 +59,7 @@ const SideBar = () => {
             <Menu />
 
             <a href="google.com" className={classes.hire}>
-                <i className="fas fa-paper-plane"></i> Hire me
+                <FontAwesomeIcon icon={faPaperPlane} /> Hire me
             </a>
         </div>
     )

@@ -110,7 +110,8 @@
         line-height: 16px;
         animation: ops 2s;
     }
-    .hideBtn i {
+    .hideBtn i,
+    .hideBtn svg {
         font-size: 26px;
     }
     @keyframes ops {

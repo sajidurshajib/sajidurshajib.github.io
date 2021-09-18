@@ -2,11 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import './assets/fontawesome/css/all.min.css'
-import './assets/fontawesome/css/brands.min.css'
-import './assets/fontawesome/css/fontawesome.min.css'
-import './assets/fontawesome/css/regular.min.css'
-import './assets/fontawesome/css/solid.min.css'
 import './index.css'
 
 ReactDOM.render(

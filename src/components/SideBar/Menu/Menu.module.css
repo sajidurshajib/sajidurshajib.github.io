@@ -12,11 +12,12 @@
     color: var(--white);
     font-weight: bold;
 }
-.Menu ul li a i {
+.Menu ul li a i,
+.Menu ul li a svg {
     font-size: 14px;
     width: 20px;
     text-align: center;
-    margin-left: 5px;
+    margin-right: 10px;
     transition: 300ms;
 }
 .Menu ul li a:hover {

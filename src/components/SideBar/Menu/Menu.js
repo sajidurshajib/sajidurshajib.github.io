@@ -1,3 +1,5 @@
+import { faBook, faBriefcase, faEnvelopeOpenText, faFileCode, faUser } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import classes from './Menu.module.css'
 
 const Menu = () => {
@@ -6,27 +8,32 @@ const Menu = () => {
             <ul>
                 <li>
                     <a href="google.com">
-                        <i className="fas fa-user"></i> About
+                        <FontAwesomeIcon icon={faUser} />
+                        About
                     </a>
                 </li>
                 <li>
                     <a href="google.com">
-                        <i className="fas fa-file-code"></i> What I Do
+                        <FontAwesomeIcon icon={faFileCode} />
+                        What I Do
                     </a>
                 </li>
                 <li>
                     <a href="google.com">
-                        <i className="fas fa-book"></i> Repositories
+                        <FontAwesomeIcon icon={faBook} />
+                        Repositories
                     </a>
                 </li>
                 <li>
                     <a href="#portfolio">
-                        <i className="fa fa-briefcase"></i> Portfolio
+                        <FontAwesomeIcon icon={faBriefcase} />
+                        Portfolio
                     </a>
                 </li>
                 <li>
                     <a href="google.com">
-                        <i className="fas fa-envelope-open-text"></i> Contact
+                        <FontAwesomeIcon icon={faEnvelopeOpenText} />
+                        Contact
                     </a>
                 </li>
             </ul>

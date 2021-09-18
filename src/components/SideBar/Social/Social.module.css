@@ -23,7 +23,8 @@
     border-radius: 100%;
     transition: 300ms;
 }
-.Social ul li a i {
+.Social ul li a i,
+.Social ul li a svg {
     line-height: 28px;
 }
 .Social ul li a:hover {
