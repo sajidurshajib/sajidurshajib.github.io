@@ -36,15 +36,16 @@
 .btnWrapper svg {
     margin-right: 5px;
 }
-.btnWrapper a {
+.btnWrapper button {
     display: inline-block;
-    padding: 7px 15px;
+    padding: 5px 15px;
+    border: none;
     border-radius: 3px;
     margin-right: 5px;
     color: var(--white);
 }
-.btnWrapper a:hover {
-    text-decoration: none;
+.btnWrapper button:hover {
+    box-shadow: 0 0 7px var(--grey);
 }
 .btnPrime {
     background-color: var(--prime-color);
