@@ -1,4 +1,4 @@
-export const sidebarState = { hide: false }
+export const sidebarState = { hide: true }
 
 export const sidebarReducer = (state, action) => {
     switch (action.type) {
@@ -6,6 +6,8 @@ export const sidebarReducer = (state, action) => {
             return { hide: false }
         case 'collapse':
             return { hide: true }
+        case 'load':
+            return { hide: action.payload }
         default:
             return state
     }

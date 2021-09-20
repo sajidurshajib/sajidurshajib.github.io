@@ -1,5 +1,5 @@
 .hideSide {
-    left: -100%;
+    left: 0;
 }
 .hideBtn {
     left: 0;
@@ -15,5 +15,16 @@
     }
     to {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hideSide {
+        left: -100%;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .hideSide {
+        left: -100%;
     }
 }
