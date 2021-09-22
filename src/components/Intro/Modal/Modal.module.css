@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: auto;
 }
 .modalBox {
     background-color: var(--white);
@@ -53,4 +54,40 @@
 }
 .modalBox span {
     color: var(--prime-color);
+}
+
+/* Form */
+.formModal input {
+    width: 100%;
+    border: none;
+    outline: 0;
+    background: var(--white-a);
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--prime-color);
+    box-shadow: 0 2px 5px var(--semi-grey);
+    font-weight: 14px;
+}
+
+.formModal textarea {
+    width: 100%;
+    border: none;
+    outline: 0;
+    background: var(--white-a);
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--prime-color);
+    box-shadow: 0 2px 5px var(--semi-grey);
+    font-weight: 14px;
+}
+
+.formModal button {
+    border: none;
+    outline: 0;
+    border-radius: 2px;
+    background: var(--prime-color);
+    color: var(--white);
+    padding: 8px 18px;
 }

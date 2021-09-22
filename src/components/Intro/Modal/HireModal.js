@@ -8,10 +8,16 @@ const HireModal = ({ close }) => {
                     X
                 </button>
                 <h4>Hire me</h4>
-                <p>
-                    This modal not available for send me any kind of information. So you can send email at{' '}
-                    <span>sajdiur.inbox@gmail.com</span>
-                </p>
+                <p>Thank you in advanced for your interest.</p>
+
+                <div className={classes.formModal}>
+                    <form action="">
+                        <input type="text" placeholder="Subject" />
+                        <input type="email" placeholder="Email" />
+                        <textarea name="" id="" cols="50" rows="6" placeholder="Message..."></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     )

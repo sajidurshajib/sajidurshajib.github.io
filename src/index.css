@@ -3,10 +3,11 @@
     --prime-color: #b32f2f;
     --semi-prime-color: #cc4444;
     --semi-white-color: #ffc3c3;
+    --dark: #333;
+    --grey: grey;
+    --semi-grey: #e5e5e5;
     --white-a: #fafafa;
     --white: #fff;
-    --grey: grey;
-    --dark: #333;
 }
 
 /* Skills */
