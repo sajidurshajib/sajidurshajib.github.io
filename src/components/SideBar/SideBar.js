@@ -1,6 +1,7 @@
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { sidebarContext } from '../../allContext'
 import config from '../../config.json'
 import Menu from './Menu/Menu'
 import classes from './SideBar.module.css'
@@ -8,9 +9,9 @@ import './SlideHide.css'
 import Social from './Social/Social'
 
 const SideBar = () => {
+    const { stateSidebar, dispatchSidebar } = useContext(sidebarContext)
+
     const [data, setData] = useState('')
-    const [side, setSide] = useState('')
-    const [btnSide, setBtnSide] = useState('')
 
     const gitUser = config.githubUsername
 
@@ -31,21 +32,13 @@ const SideBar = () => {
             .catch((err) => {
                 console.log(err)
             })
-    })
-
-    const left = () => {
-        if (side === '') {
-            setSide('hideSide')
-            setBtnSide('hideBtn')
-        } else if (side !== '') {
-            setSide('')
-            setBtnSide('')
-        }
-    }
+    }, [gitUser])
 
     return (
-        <div className={`${classes.SideBar} ${'prime-color'} ${side}`}>
-            <button className={`${classes.hideBtn} ${btnSide}`} onClick={left}>
+        <div className={`${classes.SideBar} ${'prime-color'} ${stateSidebar.hide ? 'hideSide' : null}`}>
+            <button
+                className={`${classes.hideBtn} ${stateSidebar.hide ? 'hideBtn' : null}`}
+                onClick={() => dispatchSidebar({ type: 'load', payload: !stateSidebar.hide })}>
                 <i className="fas fa-angle-double-left"></i>
             </button>
 

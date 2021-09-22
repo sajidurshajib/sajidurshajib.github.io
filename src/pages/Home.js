@@ -6,11 +6,11 @@ import Skill from '../components/Skill/Skill'
 import { sidebarState, sidebarReducer } from '../reducer/sidebarReducer'
 
 const Home = () => {
-    const [state, dispatch] = useReducer(sidebarReducer, sidebarState)
+    const [stateSidebar, dispatchSidebar] = useReducer(sidebarReducer, sidebarState)
 
     return (
         <div>
-            <sidebarContext.Provider value={{ state, dispatch }}>
+            <sidebarContext.Provider value={{ stateSidebar, dispatchSidebar }}>
                 <SideBar />
                 <Intro />
                 <Skill />
