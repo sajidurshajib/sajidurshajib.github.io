@@ -66,7 +66,7 @@
     padding: 10px;
     margin-bottom: 20px;
     border-left: 4px solid var(--prime-color);
-    box-shadow: 0 2px 5px var(--semi-grey);
+    box-shadow: 0 2px 4px var(--semi-grey);
     font-weight: 14px;
 }
 
@@ -79,7 +79,7 @@
     padding: 10px;
     margin-bottom: 20px;
     border-left: 4px solid var(--prime-color);
-    box-shadow: 0 2px 5px var(--semi-grey);
+    box-shadow: 0 2px 4px var(--semi-grey);
     font-weight: 14px;
 }
 
@@ -90,4 +90,11 @@
     background: var(--prime-color);
     color: var(--white);
     padding: 8px 18px;
+}
+
+.resume {
+    width: 380px;
+    height: 80vh;
+    background-size: cover !important;
+    background-position: center !important;
 }

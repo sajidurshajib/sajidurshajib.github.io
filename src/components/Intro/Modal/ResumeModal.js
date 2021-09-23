@@ -1,3 +1,4 @@
+import resumeImg from './../../../assets/img/resume.png'
 import classes from './Modal.module.css'
 
 const ResumeModal = ({ close }) => {
@@ -7,7 +8,7 @@ const ResumeModal = ({ close }) => {
                 <button className={classes.close} onClick={() => close(0)}>
                     X
                 </button>
-                <h3>Resume</h3>
+                <div className={classes.resume} style={{ background: `url(${resumeImg})` }}></div>
             </div>
         </div>
     )
