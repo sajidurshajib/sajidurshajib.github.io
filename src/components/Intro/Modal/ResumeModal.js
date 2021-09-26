@@ -1,4 +1,4 @@
-import resumeImg from './../../../assets/img/resume.png'
+import resumeImg from './../../../assets/img/resume.webp'
 import classes from './Modal.module.css'
 
 const ResumeModal = ({ close }) => {
