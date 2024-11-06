@@ -1,0 +1,17 @@
+{
+  "name": "sajidurshajib",
+  "version": "1.0.0",
+  "description": "Portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tailwindcss -i style.css -o ./src/style.min.css --watch"
+  },
+  "keywords": [
+    "sajidur"
+  ],
+  "author": "Sajidur Rahman",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}

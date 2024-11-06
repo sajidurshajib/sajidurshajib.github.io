@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./src/style.min.css" />
+        <title>Sajidur</title>
+    </head>
+    <body
+        class="font-sans bg-white dark:bg-gradient-to-r dark:from-slate-950 dark:to-slate-800 text-black dark:text-white">
+        <div class="max-w-[55ch] mx-auto px-4 md:px-0">
+            <!-- nav  -->
+            <div class="grid grid-cols-12 my-4">
+                <div class="col-span-3">
+                    <a href="/" class="font-semibold">
+                        <span class="block overflow-hidden group relative h-[24px]">
+                            <p class="absolute left-0 top-0 group-hover:-top-[24px] transition-all">Sajidur</p>
+                            <p class="absolute left-0 top-10 group-hover:-top-0 transition-all">Rahman</p>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-span-9 relative">
+                    <ul class="list-none absolute right-0">
+                        <li
+                            onclick="spaNav('me-section')"
+                            class="float-left px-2 md:px-4 hover:text-blue-400 hover:cursor-pointer">
+                            Me
+                        </li>
+                        <li
+                            onclick="spaNav('portfolio-section')"
+                            class="float-left px-2 md:px-4 hover:text-blue-400 hover:cursor-pointer">
+                            Portfolio
+                        </li>
+                        <li
+                            onclick="spaNav('blog-section')"
+                            class="float-left px-2 md:px-4 hover:text-blue-400 hover:cursor-pointer">
+                            Blog
+                        </li>
+                        <li class="sun float-left px-1 md:px-4 hover:cursor-pointer">☀︎</li>
+                        <li class="moon float-left px-1 md:px-4 hover:cursor-pointer">⏾</li>
+                    </ul>
+                </div>
+            </div>
+            <!--SECTION: main top  -->
+            <div class="mt-16">
+                <div class="float-left mr-4 pb-4">
+                    <div
+                        class="w-[65px] h-[65px] rounded-full border-2 border-gray-100"
+                        style="
+                            background: url('./src/img/sajidur-dev.png');
+                            background-position: center;
+                            background-size: cover;
+                        "></div>
+                </div>
+                <div class="">
+                    <h3 class="leading-none">Sajidur Rahman Shajib</h3>
+                    <p class="text-sm mt-2 leading-tight">
+                        Sr. Softwarer Engineer | Proficient in Javascript & Python | Ready to elevate your brand
+                    </p>
+                </div>
+            </div>
+            <!-- SECTION: ME  -->
+            <div id="me-section" class="content-div my-12" style="display: block">
+                <h4 class="text-gray-700 dark:text-white py-2">I'm</h4>
+                <p class="text-gray-500 dark:text-gray-300 text-justify">
+                    Senior Software Engineer with a comprehensive foundation in full-stack development, databases, and
+                    microservices. Proficient in JavaScript, Python, and cloud deployment, I enjoy building scalable,
+                    efficient systems and am always eager to learn new technologies to create impactful solutions.
+                </p>
+                <!-- ================================ -->
+                <h4 class="text-gray-700 dark:text-white py-2 mt-10 mb-2">Building Together, Beyond Just Code</h4>
+                <ul class="text-gray-500 dark:text-gray-300 text-justify text-sm">
+                    <li class="mb-3">
+                        <b class="text-gray-700 dark:text-white">✧ Engage & Listen:</b> I start by getting to know your
+                        vision and goals, ensuring we’re aligned on what success looks like.
+                    </li>
+                    <li class="mb-3">
+                        <b class="text-gray-700 dark:text-white">✧ Understand & Plan:</b> I dive deep into understanding
+                        the project’s requirements, identifying the best approach to make it efficient and impactful.
+                    </li>
+                    <li class="mb-3">
+                        <b class="text-gray-700 dark:text-white">✧ Build with Quality:</b> I focus on writing clean,
+                        scalable code that not only solves the problem but is built for future growth and maintenance.
+                    </li>
+                    <li class="mb-3">
+                        <b class="text-gray-700 dark:text-white">✧ Document & Support:</b> After delivering, I provide
+                        clear documentation and ongoing support, so you’re never left in the dark—even after the project
+                        wraps up.
+                    </li>
+                </ul>
+                <a
+                    href="https://www.linkedin.com/in/sajidurshajib/"
+                    target="_blank"
+                    class="text-sm bg-blue-500 text-white p-2 rounded-sm mt-4 inline-block">
+                    Let’s Connect</a
+                >
+            </div>
+            <!-- SECTION: Portfolio  -->
+            <div id="portfolio-section" class="content-div mt-12" style="display: none">
+                <h4 class="py-4">What I know</h4>
+                <div class="flex flex-wrap gap-1">
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">Python</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">Javascript</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">Typescript</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">Php</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">Dart</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">C</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">C++</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">Java</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">ReactJs</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">NextJs</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">FastAPI</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">DRF (django)</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">Flask</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">Express</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">Django</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">MERN</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">CodeIgniter</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">Laravel</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">PostgreSql</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">MySql</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">MongoDB</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">Docker</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">Redis</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">Git</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md"
+                        >Chrome Plugin development</span
+                    >
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md"
+                        >VS Code Plugin development</span
+                    >
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">AWS</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md">CPanel</span>
+                    <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-blue-950 rounded-md"
+                        >Linux System Administration</span
+                    >
+                </div>
+            </div>
+        </div>
+        <!-- footer  -->
+        <div
+            class="fixed left-0 bottom-0 py-2 w-full bg-white dark:bg-gradient-to-r dark:from-slate-950 dark:to-slate-800 backdrop-blur-sm">
+            <div class="max-w-[55ch] mx-auto">
+                <p class="text-sm text-gray-500 dark:text-white text-center">
+                    <a href="https://www.linkedin.com/in/sajidurshajib" target="_blank" class="hover:text-blue-400 mx-6"
+                        >Linkedin</a
+                    >
+                    <a href="https://www.dev.to/sajidurshajib" target="_blank" class="hover:text-blue-400 mx-6"
+                        >Dev.to</a
+                    >
+                    <a href="https://www.github.com/sajidurshajib" target="_blank" class="hover:text-blue-400 mx-6"
+                        >Github</a
+                    >
+                </p>
+            </div>
+        </div>
+        <script src="./src/js/script.js"></script>
+    </body>
+</html>
