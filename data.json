@@ -1,3 +1,71 @@
 {
-    "ne":"Test Data"
+    "prof_journey":[
+        {
+          "icon": "👨🏻‍💻",
+          "company": "DevotrixInc",
+          "role": "Sr Software Engineer",
+          "description": "As a Senior Software Engineer, I lead here and manage entire projects, focusing on backend development using Python and frontend tasks with JavaScript. I ensure the successful delivery of each project. I also did some automation related tasks here."
+        },
+        {
+          "icon": "🌏",
+          "company": "World AI Group",
+          "role": "Software Engineer",
+          "description": "After years of exploration and experience in the tech field, I am excited to join this dynamic team as a Full-stack developer. I primarily use Python and JavaScript, which aligns with the technologies used here. I'm excited to contribute to their projects and learn a lot from this team!"
+        },
+        {
+          "icon": "🚦",
+          "company": "ShadhinLab LLC",
+          "role": "Solution Engineer",
+          "description": "After two years of job experience, I joined here as a solution developer. I learned and worked on AWS serverless technology. Additionally, I developed a Chrome extension and maintained some Laravel and Django framework-related projects."
+        },
+        {
+          "icon": "💼",
+          "company": "HEALTHx",
+          "role": "Full-Stack Developer",
+          "description": "I joined here as a front-end developer. I use the React library most of the time, although I had to do some work in the Django framework. For the styling part, I always use custom CSS. After six months of my probation period, I start to work here front-end to back-end all stuff for all current projects. And maintain to guide my team as well."
+        },
+        {
+          "icon": "🛣️",
+          "company": "Lotus Tech Dev",
+          "role": "Junior Software Engineer",
+          "description": "Last time, before my graduation and final year project, I joined the company as a junior javascript developer. Because of the COVID-19 situation, I had to leave that job within a very short period. But in that short period, I gained well-structured knowledge about javascript and front-end development."
+        },
+        {
+          "icon": "🚀",
+          "company": "Freelance",
+          "role": "Developer",
+          "description": "During my last two years at university, I worked as a freelancer with a dedicated team, collaborating on diverse projects and delivering quality solutions. This experience enhanced my teamwork and problem-solving skills."
+        }
+      ],
+      "skills": [
+        "Python",
+        "Javascript",
+        "Typescript",
+        "Php",
+        "Dart",
+        "C",
+        "C++",
+        "Java",
+        "ReactJs",
+        "NextJs",
+        "FastAPI",
+        "DRF (django)",
+        "Flask",
+        "Express",
+        "Django",
+        "MERN",
+        "CodeIgniter",
+        "Laravel",
+        "PostgreSql",
+        "MySql",
+        "MongoDB",
+        "Docker",
+        "Redis",
+        "Git",
+        "Chrome Plugin development",
+        "VS Code Plugin development",
+        "AWS",
+        "CPanel",
+        "Linux System Administration"
+    ]    
 }

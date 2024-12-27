@@ -5,7 +5,7 @@ const moonIcon = document.querySelector('.moon');
 
 // Theme vars
 const userTheme = localStorage.getItem('theme');
-const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+// const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 // Icon toggling
 const iconToggle = () => {
@@ -15,7 +15,7 @@ const iconToggle = () => {
 
 // Initial theme check
 const themeCheck = () => {
-    if (userTheme === 'dark' || (!userTheme && systemTheme)) {
+    if (userTheme === 'dark' || (!userTheme && 'light')) {
         document.documentElement.classList.add('dark');
         moonIcon.classList.add('hidden'); // Hide moon icon when dark theme
     } else {
