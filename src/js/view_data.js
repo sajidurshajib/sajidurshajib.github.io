@@ -34,8 +34,7 @@ async function loadProfessionalJourney() {
     }
 }
 
-
-async function loadSkils() {
+async function loadSkills() {
     try {
         const data = await fetchData();
 
@@ -58,10 +57,39 @@ async function loadSkils() {
     }
 }
 
+async function loadProjects() {
+    try {
+        const data = await fetchData();
 
-function loaded(){
+        if (!data || !data.projects) {
+            console.error('Invalid data format or missing "skills" key');
+            return;
+        }
+
+        const projectList = document.querySelector('#project-list');
+        projectList.innerHTML = '';
+
+        data.projects.forEach(({ name, icon, link, year, tech, details }) => {
+            const listItem = `
+                <li class="mb-6">
+                    <b class="text-gray-700 dark:text-white hover:text-blue-500 dark:hover:text-blue-400"><a href="${link}">${icon} ${name}</a></b> | ${year}
+                    <p class="my-2 text-black dark:text-white text-xs">${tech}</p>
+                    <p class="mt-1">
+                        ${details}
+                    </p>
+                </li>
+            `;
+            projectList.innerHTML += listItem;
+        });
+    } catch (error) {
+        console.error('Failed to load experience data:', error);
+    }
+}
+
+function loaded() {
     loadProfessionalJourney();
-    loadSkils()
+    loadSkills();
+    loadProjects();
 }
 
 document.addEventListener('DOMContentLoaded', loaded);

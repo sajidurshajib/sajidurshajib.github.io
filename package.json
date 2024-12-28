@@ -4,7 +4,7 @@
   "description": "Portfolio site",
   "main": "index.js",
   "scripts": {
-    "start": "npx tailwindcss -i style.css -o ./src/style.min.css --watch"
+    "start": "npx tailwindcss -i style.css -o ./src/style.min.css --minify --watch"
   },
   "keywords": [
     "sajidur"

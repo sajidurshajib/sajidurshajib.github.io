@@ -15,11 +15,11 @@ const iconToggle = () => {
 
 // Initial theme check
 const themeCheck = () => {
-    if (userTheme === 'dark' || (!userTheme && 'light')) {
-        document.documentElement.classList.add('dark');
-        moonIcon.classList.add('hidden'); // Hide moon icon when dark theme
-    } else {
+    if (userTheme === 'light' || (!userTheme && 'light')) {
+        document.documentElement.classList.add('light');
         sunIcon.classList.add('hidden'); // Hide sun icon when light theme
+    } else {
+        moonIcon.classList.add('hidden'); // Hide moon icon when dark theme
     }
 };
 

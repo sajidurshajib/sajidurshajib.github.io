@@ -1,6 +1,6 @@
 async function fetchDevTo() {
     try {
-        const response = await fetch('https://dev.to/api/articles?username=sajidurshajib&per_page=10');
+        const response = await fetch('https://dev.to/api/articles?username=sajidurshajib&per_page=6');
         const json = await response.json();
         return json;
     } catch (error) {
@@ -21,9 +21,9 @@ async function loadBlogs() {
 
         data.forEach(({ title, canonical_url, description }) => {
             const listItem = `
-                <li class="mb-3">
-                    <b class="text-gray-700 dark:text-white tracking-widest hover:text-blue-500"><a href="${canonical_url}">${title}</a></b>
-                    <p class="mt-1">${description}</p>
+                <li class="mb-4">
+                    <b class="text-gray-700 dark:text-white tracking-widest hover:text-blue-500 dark:hover:text-blue-400"><a href="${canonical_url}">${title}</a></b>
+                    <p class="mb-1">${description}</p>
                 </li>
             `;
             professionalList.innerHTML += listItem;
