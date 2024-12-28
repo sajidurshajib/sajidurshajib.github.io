@@ -1,0 +1,15 @@
+meta {
+  name: Get blog posts
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://dev.to/api/articles?username=sajidurshajib
+  body: none
+  auth: none
+}
+
+params:query {
+  username: sajidurshajib
+}

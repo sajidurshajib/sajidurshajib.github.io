@@ -21,6 +21,7 @@ module.exports = {
         'text-justify',
         'tracking-widest',
         'rounded-md',
+        'hover:text-blue-500',
         'dark:text-white',
         'dark:text-gray-300',
         'dark:bg-blue-950', 
