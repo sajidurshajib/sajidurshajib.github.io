@@ -120,15 +120,15 @@
                 </p>
             </div>
         </div>
-        
+
         <!-- TODO: Need to fix spinner  -->
-        <div id="spinner" class="fixed inset-0 bg-white bg-opacity-80 flex items-center justify-center z-50">
+        <div id="spinner" class="fixed w-full inset-0 bg-white bg-opacity-80 flex items-center justify-center z-50">
             <div
                 class="animate-spin rounded-full h-12 w-12 border-t-4 border-blue-500 border-solid border-opacity-70"></div>
         </div>
         <script>
             // Show the spinner
-            document.getElementById('spinner').style.display = 'block';
+            document.getElementById('spinner').style.display = 'flex';
 
             // Hide the spinner when the page is fully loaded
             window.addEventListener('load', () => {
