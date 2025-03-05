@@ -44,5 +44,5 @@ moonIcon.addEventListener('click', () => {
     themeSwitch();
 });
 
-// initial loads
+// Initial load
 themeCheck();
