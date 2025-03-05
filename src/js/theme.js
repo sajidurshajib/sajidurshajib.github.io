@@ -3,10 +3,6 @@
 const sunIcon = document.querySelector('.sun');
 const moonIcon = document.querySelector('.moon');
 
-// Theme vars
-const userTheme = localStorage.getItem('theme');
-// const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
 // Icon toggling
 const iconToggle = () => {
     sunIcon.classList.toggle('hidden');
@@ -15,10 +11,12 @@ const iconToggle = () => {
 
 // Initial theme check
 const themeCheck = () => {
-    if (userTheme === 'light' || (!userTheme && 'light')) {
+    let userTheme = localStorage.getItem('theme');
+    if (userTheme === 'light' || !userTheme) {
         document.documentElement.classList.add('light');
         sunIcon.classList.add('hidden'); // Hide sun icon when light theme
     } else {
+        document.documentElement.classList.add('dark');
         moonIcon.classList.add('hidden'); // Hide moon icon when dark theme
     }
 };
@@ -45,4 +43,4 @@ moonIcon.addEventListener('click', () => {
 });
 
 // Initial load
-themeCheck();
+document.addEventListener('DOMContentLoaded', themeCheck);
