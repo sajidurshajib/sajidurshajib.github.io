@@ -1,6 +1,6 @@
 async function fetchDevTo() {
     try {
-        const response = await fetch('https://dev.to/api/articles?username=sajidurshajib&per_page=6');
+        const response = await fetch('https://dev.to/api/articles?username=sajidurshajib&per_page=7');
         const json = await response.json();
         return json;
     } catch (error) {

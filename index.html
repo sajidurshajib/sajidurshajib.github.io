@@ -8,6 +8,12 @@
             name="description"
             content="Sajidur Rahman - A Senior Software Engineer specializing in full-stack development, databases, microservices, and scalable systems." />
         <link rel="icon" href="./src/img/sajidur-dev-circ.png" type="image/icon type" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
 
         <title>Sajidur - Senior Software Engineer</title>
     </head>
@@ -15,41 +21,44 @@
         class="font-sans bg-white dark:bg-gradient-to-r dark:from-slate-950 dark:to-slate-800 text-black dark:text-white">
         <div class="max-w-[55ch] mx-auto px-4 md:px-0 pb-12">
             <!-- nav  -->
-            <div class="grid grid-cols-12 my-4">
-                <div class="col-span-3">
-                    <span onclick="spaNav('me-section')" class="font-semibold cursor-pointer">
-                        <span class="block overflow-hidden group relative h-[24px]">
-                            <p class="absolute left-0 top-0 group-hover:-top-[24px] transition-all">Sajidur</p>
-                            <p class="absolute left-0 top-10 group-hover:-top-0 transition-all">Rahman</p>
+            <div
+                class="fixed left-0 top-0 py-3 w-full bg-white/15 dark:bg-bllue-400 dark:bg-gradient-to-r dark:from-slate-950/50 dark:to-slate-800/50 backdrop-blur-md">
+                <div class="max-w-[55ch] mx-auto px-4 md:px-0 grid grid-cols-12 my-2">
+                    <div class="col-span-3">
+                        <span onclick="spaNav('me-section')" class="font-semibold cursor-pointer">
+                            <span class="block overflow-hidden group relative h-[24px]">
+                                <p class="absolute left-0 top-0 group-hover:-top-[24px] transition-all">Sajidur</p>
+                                <p class="absolute left-0 top-10 group-hover:-top-0 transition-all">Rahman</p>
+                            </span>
                         </span>
-                    </span>
-                </div>
-                <div class="col-span-9 relative">
-                    <ul class="list-none absolute right-0">
-                        <li
-                            onclick="spaNav('me-section')"
-                            class="float-left px-2 md:px-4 hover:text-blue-400 hover:cursor-pointer">
-                            👨🏻‍💻 Me
-                        </li>
-                        <li
-                            onclick="spaNav('portfolio-section')"
-                            class="float-left px-2 md:px-4 hover:text-blue-400 hover:cursor-pointer">
-                            📁 Portfolio
-                        </li>
-                        <li
-                            onclick="spaNav('blog-section')"
-                            class="float-left px-2 md:px-4 hover:text-blue-400 hover:cursor-pointer">
-                            📔 Blog
-                        </li>
+                    </div>
+                    <div class="col-span-9 relative">
+                        <ul class="list-none absolute right-0">
+                            <li
+                                onclick="spaNav('me-section')"
+                                class="float-left px-2 md:px-4 hover:text-blue-400 hover:cursor-pointer">
+                                👨🏻‍💻 Me
+                            </li>
+                            <li
+                                onclick="spaNav('portfolio-section')"
+                                class="float-left px-2 md:px-4 hover:text-blue-400 hover:cursor-pointer">
+                                📁 Portfolio
+                            </li>
+                            <li
+                                onclick="spaNav('blog-section')"
+                                class="float-left px-2 md:px-4 hover:text-blue-400 hover:cursor-pointer">
+                                📔 Blog
+                            </li>
 
-                        <li class="sun float-left px-1 md:px-4 hover:cursor-pointer">☀︎</li>
-                        <li class="moon float-left px-1 md:px-4 hover:cursor-pointer">⏾</li>
-                    </ul>
+                            <li class="sun float-left px-1 md:px-4 hover:cursor-pointer">☀︎</li>
+                            <li class="moon float-left px-1 md:px-4 hover:cursor-pointer">⏾</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <!--SECTION: main top  -->
-            <div class="mt-16">
+            <div class="mt-20">
                 <div class="float-left mr-4 pb-4">
                     <div
                         class="w-[65px] h-[65px] rounded-full border-2 border-gray-100"
@@ -83,8 +92,8 @@
                     href="https://www.linkedin.com/in/sajidurshajib/"
                     target="_blank"
                     class="text-sm bg-blue-500 text-white p-2 rounded-sm mt-4 inline-block">
-                    Let’s Connect <span class="bg-white text-blue-500 font-bold px-2 py-1 rounded-sm">in</span></a
-                >
+                    Let’s Connect <i class="fa-brands fa-linkedin text-xl"></i>
+                </a>
             </div>
 
             <!-- SECTION: Portfolio  -->
@@ -106,7 +115,7 @@
             </div>
         </div>
         <!-- footer  -->
-        <div
+        <!-- <div
             class="fixed left-0 bottom-0 py-3 w-full bg-white/15 dark:bg-bllue-400 dark:bg-gradient-to-r dark:from-slate-950/50 dark:to-slate-800/50 backdrop-blur-md">
             <div class="max-w-[55ch] mx-auto">
                 <p class="text-sm text-gray-400 dark:text-white text-center">
@@ -130,7 +139,7 @@
                     >
                 </p>
             </div>
-        </div>
+        </div> -->
 
         <div id="spinner" class="fixed w-full inset-0 bg-white bg-opacity-80 flex items-center justify-center z-50">
             <div
