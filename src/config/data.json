@@ -1,0 +1,113 @@
+{
+    "prof_journey": [
+        {
+            "icon": "👨🏻‍💻",
+            "company": "DevotrixInc",
+            "role": "Sr Software Engineer",
+            "description": "As a Senior Software Engineer, I lead here and manage entire projects, focusing on backend development using Python and frontend tasks with JavaScript. I ensure the successful delivery of each project. I also did some automation related tasks here."
+        },
+        {
+            "icon": "🌏",
+            "company": "World AI Group",
+            "role": "Software Engineer",
+            "description": "After years of exploration and experience in the tech field, I am excited to join this dynamic team as a Full-stack developer. I primarily use Python and JavaScript, which aligns with the technologies used here. I'm excited to contribute to their projects and learn a lot from this team!"
+        },
+        {
+            "icon": "🚦",
+            "company": "ShadhinLab LLC",
+            "role": "Solution Engineer",
+            "description": "After two years of job experience, I joined here as a solution developer. I learned and worked on AWS serverless technology. Additionally, I developed a Chrome extension and maintained some Laravel and Django framework-related projects."
+        },
+        {
+            "icon": "💼",
+            "company": "HEALTHx",
+            "role": "Full-Stack Developer",
+            "description": "I joined here as a front-end developer. I use the React library most of the time, although I had to do some work in the Django framework. For the styling part, I always use custom CSS. After six months of my probation period, I start to work here front-end to back-end all stuff for all current projects. And maintain to guide my team as well."
+        },
+        {
+            "icon": "🛣️",
+            "company": "Lotus Tech Dev",
+            "role": "Junior Software Engineer",
+            "description": "Last time, before my graduation and final year project, I joined the company as a junior javascript developer. Because of the COVID-19 situation, I had to leave that job within a very short period. But in that short period, I gained well-structured knowledge about javascript and front-end development."
+        },
+        {
+            "icon": "🚀",
+            "company": "Freelance",
+            "role": "Developer",
+            "description": "During my last two years at university, I worked as a freelancer with a dedicated team, collaborating on diverse projects and delivering quality solutions. This experience enhanced my teamwork and problem-solving skills."
+        }
+    ],
+    "skills": [
+        "Python",
+        "Javascript",
+        "Typescript",
+        "Php",
+        "Dart",
+        "C",
+        "C++",
+        "Java",
+        "ReactJs",
+        "NextJs",
+        "FastAPI",
+        "DRF (django)",
+        "Flask",
+        "Express",
+        "Django",
+        "MERN",
+        "CodeIgniter",
+        "Laravel",
+        "PostgreSql",
+        "MySql",
+        "MongoDB",
+        "Docker",
+        "Redis",
+        "Git",
+        "Chrome Plugin development",
+        "VS Code Plugin development",
+        "AWS",
+        "CPanel",
+        "Linux System Administration"
+    ],
+    "projects": [
+        {
+            "name": "Edgeful",
+            "icon": "📈",
+            "link": "https://www.edgeful.com/",
+            "year": "2024",
+            "tech": "Python | FastAPI | PostgreSql | Redis",
+            "details": "At Edgeful, I contributed to the backend development using Python and FastAPI, focusing on building robust and efficient systems. I implemented microservices to ensure scalability and seamless integration across various modules. These services allowed users to analyze real-time market movements for stocks, ETFs, forex pairs, and futures contracts. My work empowered users to make informed decisions, similar to strategies employed by institutional investors."
+        },
+        {
+            "name": "DentiCE",
+            "icon": "🦷",
+            "link": "https://dentice.ai/",
+            "year": "2023 - 2024",
+            "tech": "Python | FastAPI | PostgreSql | Redis | Js | React",
+            "details": "Contributed to DentiCE.ai, an innovative platform developed for World AI Group, focusing on enhancing the learning experience for dentists. This project enables users to attend events and earn credits for their participation and learning. Played a pivotal role in both frontend and backend development, ensuring a seamless and engaging user experience while facilitating valuable educational opportunities in the dental field."
+        },
+        {
+            "name": "Next-Gen Healthcare Ecosystem (HEALTHx)",
+            "icon": "🏥",
+            "link": "https://healthxbd.com/",
+            "year": "2021 - 2023",
+            "tech": "Python | FastAPI | Django | Js | React | NextJs | Mysql",
+            "details": "Engineered a scalable backend with FastAPI and MySQL, supporting multiple frontends, including the main website, doctor portal, patient portal, e-prescription system, clinic portal, pharmacy portal, and an integrated dashboard. The front-end, built with React and Next.js, enabled efficient, user-friendly access across all service points, streamlining health service management and enhancing patient care."
+        },
+        {
+            "name": "Bentiu University Of Petroleum",
+            "icon": "🎓",
+            "link": "https://bucp.edu.ss/",
+            "year": "2024",
+            "tech": "Python | Django | MySql ",
+            "details": "I developed the official website for BUCP (https://bucp.edu.ss/) from the ground up, handling all aspects of design, functionality, and deployment. Starting from scratch, I focused on creating an intuitive, user-friendly interface with efficient navigation, ensuring a responsive design for both desktop and mobile devices. By implementing best practices in web development, I built a platform that effectively represents BUCP's mission and services, offering visitors a seamless browsing experience and easy access to information."
+        },
+        {
+            "name": "Ministry of Petroleum South Sudan",
+            "icon": "🛢️",
+            "link": "https://mop.gov.ss/",
+            "year": "2023",
+            "tech": "Python | Django | MySql ",
+            "details": "I joined this project when the website was incomplete and faced significant efficiency challenges due to issues left by the previous developer. My role was to address these efficiency problems, optimize performance, and implement new features that enhanced both functionality and user experience. This included troubleshooting and resolving bottlenecks, improving load times, and ensuring a smooth, efficient user interface. Through these improvements, I contributed to a revitalized and fully functional website that met the client's expectations and objectives."
+        }
+    ]
+}
