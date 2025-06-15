@@ -9,7 +9,7 @@ const __dirname = dirname(__filename)
 
 // https://vite.dev/config/
 export default defineConfig({
-    base: '/sajidurshajib.github.io/',
+    base: '/',
     plugins: [react(), tailwindcss()],
     resolve: {
         alias: {

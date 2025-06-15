@@ -1,8 +1,6 @@
 # sajidurshajib.github.io
 
-## 🚀 Run
-
-run in development
+## 🚀 Run in Development
 
 ```
 npm run dev
@@ -10,15 +8,11 @@ npm run dev
 
 > check - localhost:3000
 
-## ✍🏻 Todo
-
-- structure
-- router
+## 👨🏻‍💻 Deploy (gh-pages)
 
 ```
-src/
-├── components/
-│   ├── ui/              # Reusable atomic components (Button, Input)
-│   ├── common/          # Molecules & organisms (Navbar, Card, Modal)
-│   └── layout/          # Layout-related components (Sidebar, Wrapper)
+npm run predeploy
+npm run deploy
 ```
+
+> remember `gh-pages` is your deployment branch.
