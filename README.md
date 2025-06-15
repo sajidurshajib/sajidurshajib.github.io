@@ -22,5 +22,3 @@ src/
 │   ├── common/          # Molecules & organisms (Navbar, Card, Modal)
 │   └── layout/          # Layout-related components (Sidebar, Wrapper)
 ```
-
-        // "build": "tsc -b && vite build",
