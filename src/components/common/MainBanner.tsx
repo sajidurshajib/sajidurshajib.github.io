@@ -16,8 +16,8 @@ const MainBanner: React.FC = () => {
                     Sajidur Rahman Shajib
                 </h3>
                 <p className="text-sm mt-2 leading-tight">
-                    SWE @ 5y exp | Python & JS | Microservices | Cloud & AI
-                    Explorer
+                    Software Engineer | 5+ years of exp | Proficiency in Python
+                    & JS | Microservices | Cloud & AI Explorer
                 </p>
             </div>
         </div>
