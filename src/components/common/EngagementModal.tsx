@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 
 const LINKEDIN_URL = 'https://www.linkedin.com/in/sajidurshajib/'
 const STORAGE_KEY = 'engagement-modal-seen'
-const DELAY_MS = 5_000
+const DELAY_MS = 10_000
 
 const EngagementModal: React.FC = () => {
     const prefersReducedMotion = useReducedMotion()
