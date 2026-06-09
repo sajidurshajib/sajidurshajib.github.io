@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Footer: React.FC = () => {
     return (
         <div className="py-3 w-full">
-            <hr className="my-2 border-1 border-gray-100 dark:border-blue-950" />
+            <hr className="my-2 border-1 border-gray-100 dark:border-ink-border" />
             <div className="mt-4">
                 <div className="grid grid-cols-2">
                     <div>

@@ -20,7 +20,7 @@ const Nav: React.FC = () => {
     }, [darkMode])
 
     return (
-        <div className="fixed left-0 top-0 py-3 w-full bg-white/15 dark:bg-bllue-400 dark:bg-gradient-to-r dark:from-slate-950/50 dark:to-slate-800/50 backdrop-blur-md">
+        <div className="fixed left-0 top-0 py-3 w-full bg-white/80 dark:bg-ink/85 backdrop-blur-md border-b border-transparent dark:border-ink-border">
             <div className="max-w-[55ch] mx-auto px-4 md:px-0 grid grid-cols-12 my-2">
                 <div className="col-span-3">
                     <span className="font-semibold cursor-pointer">

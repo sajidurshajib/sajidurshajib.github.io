@@ -1,3 +1,9 @@
 @import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-ink: #161616;
+    --color-ink-muted: #1c1c1c;
+    --color-ink-border: #2e2e2e;
+}

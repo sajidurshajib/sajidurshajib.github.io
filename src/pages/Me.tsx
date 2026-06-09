@@ -6,14 +6,18 @@ const Me = () => {
             <h4 className="text-gray-700 dark:text-white py-2 text-xl font-semibold">
                 I'm
             </h4>
-            <p className="text-gray-500 dark:text-gray-300 text-justify">
-                A Software Engineer with a comprehensive foundation in
-                full-stack development, databases, and microservices. Proficient
-                in JavaScript, Python, and cloud deployment, I enjoy building
-                scalable, efficient systems and am always eager to learn new
-                technologies to create impactful solutions.
+            <p className="text-gray-500 dark:text-gray-300 text-md text-justify">
+                A Software Engineer with experience across full-stack
+                development, databases, and microservices in JavaScript and
+                Python. I stay involved after deploy, fixing production issues,
+                improving monitoring, and cutting manual ops so what I build
+                stays reliable when real users depend on it. Most of my work
+                blends shipping features with keeping systems steady in live
+                environments. Production reliability, observability, and
+                infrastructure automation are as important to me as writing the
+                code itself.
             </p>
-            <h4 className="text-gray-700 dark:text-white py-2 mt-10 mb-2 text-xl font-semibold">
+            <h4 className="text-gray-700 dark:text-white pb-2 mt-10 mb-2 text-xl font-semibold">
                 My Professional Journey
             </h4>
             <ul className="text-gray-500 dark:text-gray-300 text-justify text-sm">
