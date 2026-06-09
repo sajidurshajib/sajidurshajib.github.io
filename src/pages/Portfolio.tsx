@@ -13,6 +13,22 @@ const listContainer = {
 
 const transition = { duration: 0.25, ease: 'easeOut' as const }
 
+const skillTagClass =
+    'inline-block relative z-0 hover:z-10 text-xs px-3 py-1 ' +
+    'bg-gray-100 dark:bg-ink-muted border border-transparent dark:border-ink-border rounded-md ' +
+    'transition-[transform,border-color] duration-200 ease-out origin-center ' +
+    'motion-safe:hover:scale-125 motion-safe:hover:border-blue-300 dark:motion-safe:hover:border-blue-400'
+
+const SkillTags: React.FC<{ skills: string[] }> = ({ skills }) => (
+    <div className="flex flex-wrap gap-1">
+        {skills.map((skill, index) => (
+            <span className={skillTagClass} key={index}>
+                {skill}
+            </span>
+        ))}
+    </div>
+)
+
 const Portfolio = () => {
     const prefersReducedMotion = useReducedMotion()
 
@@ -22,15 +38,14 @@ const Portfolio = () => {
                 <h4 className="py-2 text-gray-700 dark:text-white text-xl font-semibold">
                     What I know
                 </h4>
-                <div className="flex flex-wrap gap-1 mb-4">
-                    {data.skills.map((skill, index) => (
-                        <span
-                            className="text-xs px-3 py-1 bg-gray-100 dark:bg-ink-muted dark:border dark:border-ink-border rounded-md"
-                            key={index}
-                        >
-                            {skill}
-                        </span>
-                    ))}
+                <div className="mb-4">
+                    <SkillTags skills={data.skills} />
+                </div>
+                <h5 className="pb-2 text-gray-600 dark:text-gray-400 text-sm font-semibold">
+                    What I knew
+                </h5>
+                <div className="mb-4">
+                    <SkillTags skills={data.skillsPast} />
                 </div>
                 <h4 className="py-6 text-gray-700 dark:text-white text-xl font-semibold">
                     Projects That Define My Journey
@@ -84,16 +99,23 @@ const Portfolio = () => {
             <motion.div
                 variants={fadeUp}
                 transition={transition}
-                className="flex flex-wrap gap-1 mb-4"
+                className="mb-4"
             >
-                {data.skills.map((skill, index) => (
-                    <span
-                        className="text-xs px-3 py-1 bg-gray-100 dark:bg-ink-muted dark:border dark:border-ink-border rounded-md"
-                        key={index}
-                    >
-                        {skill}
-                    </span>
-                ))}
+                <SkillTags skills={data.skills} />
+            </motion.div>
+            <motion.h5
+                variants={fadeUp}
+                transition={transition}
+                className="pb-2 text-gray-600 dark:text-gray-400 text-sm font-semibold"
+            >
+                What I knew
+            </motion.h5>
+            <motion.div
+                variants={fadeUp}
+                transition={transition}
+                className="mb-4"
+            >
+                <SkillTags skills={data.skillsPast} />
             </motion.div>
             <motion.h4
                 variants={fadeUp}
