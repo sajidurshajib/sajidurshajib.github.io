@@ -1,7 +1,22 @@
+import { motion, useReducedMotion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
+const nameSpring = { type: 'spring' as const, stiffness: 400, damping: 30 }
+const navSpring = { type: 'spring' as const, stiffness: 500, damping: 30 }
+
+const nameVariants = {
+    rest: { y: 0 },
+    hover: { y: -24 },
+}
+
+const lastNameVariants = {
+    rest: { y: 24 },
+    hover: { y: 0 },
+}
+
 const Nav: React.FC = () => {
+    const prefersReducedMotion = useReducedMotion()
     const [darkMode, setDarkMode] = useState<boolean>(() => {
         return localStorage.getItem('theme') === 'dark'
     })
@@ -25,35 +40,75 @@ const Nav: React.FC = () => {
                 <div className="col-span-3">
                     <span className="font-semibold cursor-pointer">
                         <Link to="/">
-                            <span className="block overflow-hidden group relative h-[24px]">
-                                <p className="absolute left-0 top-0 group-hover:-top-[24px] transition-all">
-                                    Sajidur
-                                </p>
-                                <p className="absolute left-0 top-10 group-hover:-top-0 transition-all">
-                                    Rahman
-                                </p>
-                            </span>
+                            {prefersReducedMotion ? (
+                                <span>Sajidur</span>
+                            ) : (
+                                <motion.span
+                                    className="block overflow-hidden relative h-[24px]"
+                                    initial="rest"
+                                    whileHover="hover"
+                                >
+                                    <motion.span
+                                        className="absolute left-0 block"
+                                        variants={nameVariants}
+                                        transition={nameSpring}
+                                    >
+                                        Sajidur
+                                    </motion.span>
+                                    <motion.span
+                                        className="absolute left-0 block"
+                                        variants={lastNameVariants}
+                                        transition={nameSpring}
+                                    >
+                                        Rahman
+                                    </motion.span>
+                                </motion.span>
+                            )}
                         </Link>
                     </span>
                 </div>
                 <div className="col-span-9 relative">
                     <ul className="list-none absolute right-0">
-                        <li className="float-left px-2 md:px-4 hover:text-blue-400 hover:cursor-pointer">
+                        <motion.li
+                            className="float-left px-2 md:px-4 hover:text-blue-400 hover:cursor-pointer"
+                            whileHover={
+                                prefersReducedMotion ? undefined : { y: -1 }
+                            }
+                            transition={navSpring}
+                        >
                             <Link to="/">👨🏻‍💻 Me</Link>
-                        </li>
-                        <li className="float-left px-2 md:px-4 hover:text-blue-400 hover:cursor-pointer">
+                        </motion.li>
+                        <motion.li
+                            className="float-left px-2 md:px-4 hover:text-blue-400 hover:cursor-pointer"
+                            whileHover={
+                                prefersReducedMotion ? undefined : { y: -1 }
+                            }
+                            transition={navSpring}
+                        >
                             <Link to="/portfolio">📁 Portfolio</Link>
-                        </li>
-                        <li className="float-left px-2 md:px-4 hover:text-blue-400 hover:cursor-pointer">
+                        </motion.li>
+                        <motion.li
+                            className="float-left px-2 md:px-4 hover:text-blue-400 hover:cursor-pointer"
+                            whileHover={
+                                prefersReducedMotion ? undefined : { y: -1 }
+                            }
+                            transition={navSpring}
+                        >
                             <Link to="/blog">📔 Blog</Link>
-                        </li>
+                        </motion.li>
 
-                        <li
+                        <motion.li
                             className="moon float-left px-1 md:px-4 hover:cursor-pointer"
                             onClick={() => setDarkMode(!darkMode)}
+                            whileHover={
+                                prefersReducedMotion
+                                    ? undefined
+                                    : { rotate: 12, y: -1 }
+                            }
+                            transition={navSpring}
                         >
                             {!darkMode ? '⏾' : '☀︎'}
-                        </li>
+                        </motion.li>
                     </ul>
                 </div>
             </div>
